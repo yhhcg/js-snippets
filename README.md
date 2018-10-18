@@ -2,6 +2,6 @@
 
 > Record interesting javascript snippets
 
-** List **  
+**List**  
 
-* compose
+* [`pipe`](/src/pipe.md)
