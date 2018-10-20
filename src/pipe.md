@@ -1,10 +1,6 @@
 ### pipe  
 
-A pipe flowing left-to-right.
-
-The leftmost function can take multiple arguments.  
-Each function takes the output of the previous one.
-For example, pipe(f, g, h)(...args) is equivalent to doing h(g(f(...args))).
+A pipe flowing left-to-right. The leftmost function can take multiple arguments. Each function takes the output of the previous one. For example, pipe(f, g, h)(...args) is equivalent to doing h(g(f(...args))).
 
 ```js
   const pipe = (...fns) => fns.reduce((preFn, nextFn) => (...args) => nextFn(preFn(...args)));

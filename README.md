@@ -4,4 +4,5 @@
 
 **List**  
 
+* [`compose`](/src/compose.md)
 * [`pipe`](/src/pipe.md)
