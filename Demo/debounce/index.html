@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>防抖debounce</title>
+</head>
+<body>
+  <input id="app" />
+  <div id="inputValue"></div>
+</body>
+<script>
+  function getUserAction(event) {
+    document.getElementById("inputValue").innerHTML = event.target.value;
+  };
+
+  document.getElementById('app').oninput = getUserAction;
+
+
+  // function debounce(fn, delay) {
+  //   let timeoutId;
+
+  //   return function() {
+  //     const context = this;
+  //     const args = arguments;
+
+  //     timeoutId !== void 0 && clearTimeout(timeoutId);
+
+  //     timeoutId = setTimeout(function() {
+  //       fn.apply(context, args);
+  //     }, delay);
+  //   };
+  // }
+
+  // document.getElementById('app').oninput = debounce(getUserAction, 1000);
+</script>
+</html>
